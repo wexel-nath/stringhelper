@@ -19,10 +19,14 @@ import (
 
 func main() {
     myString := "kev-kev"
-    
-    newString := stringhelper.Titleize(myString)
-    
-    fmt.Println(myString)  // kev-kev
-    fmt.Println(newString) // Kev Kev
+
+    camelized := stringhelper.Camelize(myString)
+    pascalized := stringhelper.Pascalize(myString)
+    titled := stringhelper.Titleize(myString)
+
+    fmt.Println(myString)   // kev-kev
+    fmt.Println(camelized)  // kevKev
+    fmt.Println(pascalized) // KevKev
+    fmt.Println(titled)     // Kev Kev
 }
 ```
